@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html itemscope itemtype="http://schema.org/" lang="en"> <!--<![endif]-->
+<head>
+    <meta itemprop="name" content="Sports Log">
+    <meta itemprop="description" content="record your gym exercises and monitor your workouts, create movie lists.">
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Sports Log</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style>
+	.ml35mb0{margin-left: 35px;margin-bottom: 0px;}
+	.mb0{margin-bottom: 0px}
+	</style>
+
+</head>
+<body>
+	<!-- container -->
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+                <div class="row">
+				    <h4>Sports Log</h4>
+				    <hr/>
+                </div>
+                <div class="row">
+                    <div id="divLogout" style="text-align:right;display: none;">
+                        <a href="#" id="btnLogout">Logout</a>
+                    </div>
+				    <div id="divLogin">                    
+                        <div class="eight columns">
+                            <div class="six columns">
+                                <strong>Gym Log:</strong> do you visit the gym and record your weights and repetitions. Have you always thought of something better than paper and pen.
+                                Have you always wanted to try recording your stastistics. Did you want a very simple tool to do it for you. <br /><br />
+                                Here is the solution to all your gym log problems. 
+                                Even access the website via mobile and record statistics as you workout. Signup and login and you will be guided by a tutorial till you get used to the simple user interface.<br /><br />
+                                <img src="images/gymlog.png" /><br /><br />
+                            </div>
+                            <div class="six columns">
+                                <div class="row">
+                                    <img src="images/movielist.png" /><br /><br />
+                                    <strong>Movie Lists:</strong> are you a movie buff, who records the movies you have watched, you have come to the right place, record your movies here and share with your friends.
+                                </div>
+                                <div class="row">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four columns">
+                            <div class="row">
+					            <table>
+						            <tr>
+							            <td><strong><label for="id">Id</label></strong></td>
+							            <td><input type=text id="id" name="id"></td>
+						            </tr>
+						            <tr>
+							            <td><strong><label for="password">Password</label></strong></td>
+							            <td><input type="password" id="password" name="password"></td>
+						            </tr>
+						            <tr>
+							            <td><a id="btnLogin" href="#" class="small blue button">Login</a></td>
+							            <td><a id="btnSignup" href="#" class="small blue button">Signup</a></td>
+						            </tr>
+					            </table>
+                            </div>
+                            <div class="row">
+
+                            </div>
+                            <div class="row">
+                                <strong>Login:</strong> type in your user id and password if you allready have an account or signup with us to use our services.<br /><br />
+                            </div>
+                            <div class="row">
+                                <strong>Signup:</strong> to signup, simply enter a new user id and password into the fields above and click on signup. 
+                                You would then be able to log into the application.<br /><br />
+                            </div>
+                            <div class="row">
+                                <strong>Tip:</strong> the plus signs appear at 4 places, clicking on them will open a textbox and a save button. 
+                                Typing a text and saving will save the data.<br /><br />
+                            </div>
+                            <div class="row">
+                                <strong>Info:</strong> this site has been developed with webservice backends running on php mysql linux servers on bluehost.com. 
+                                The html and javascript comprise of the client side code which peform ajax calls to send and retrieve data to the server. <br /><br />
+                            </div>
+                            <div class="row">
+                                <strong>Follow me:</strong> on <a href="https://twitter.com/#!/pmontu2">twitter</a> for more information about me or my <a href="http://pmontu.com">blog</a> for more information about my work.<br /><br />
+                            </div>
+                            <div class="row">
+                                <strong>Mail me:</strong> your feedbacks, comments and bugs to my <a href="mailto:pmontu@gmail.com">email</a><br /><br />
+                            </div>
+                            <div class="row">
+                                <strong>Share:</strong> <g:plusone size="medium"></g:plusone> <a href="https://twitter.com/share" class="twitter-share-button" data-via="pmontu2">Tweet</a> <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsportslog.yizotech.com&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp;appId=178947682124425" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe><br /><br />
+                            </div>
+                        </div>
+				    </div>
+                    <ul>
+					    <div id="divRoots">
+					    </div>
+					    <div id="divRootsAdd" style="display: none;">
+                            <div id="divRootsAddButton">
+                                <li><a href="#" id="btnAddRoot">
+                                    <img src="images/Add_16x16.png" /></a></li>
+                            </div>
+						    <div id="divRootsAddText" style="display: none;">
+							    <li><input type="text" id="txtRootNew" name="root"><a href="#" id="btnRootAddSave"><img src="images/Save_16x16.png"></a></li>
+						    </div>
+					    </div>
+				    </ul>
+                </div>
+                <div class="row">
+                    <hr />
+                    <p style="text-align: center;">&#169; pmontu</p>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- container -->
+	
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/client.js"></script>
+
+</body>
+</html>
